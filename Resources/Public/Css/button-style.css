@@ -1,0 +1,592 @@
+.btn-social {
+    padding: 0;
+    overflow: unset;
+}
+.btn-social>:first-child {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 45px;
+    line-height: 34px;
+    font-size: 25px;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+
+.tx-ns-social-login {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.theme-social-login .btn-social {
+    width: auto;
+}
+
+.theme-icon-auto-width .btn-social {
+    width: auto;
+}
+
+.theme-icon-full-width .btn-social {
+    width: 350px;
+}
+
+/* Icon with label */
+.social-icon-list {
+    display: inline-block;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.social-icon-list li {
+    padding: 10px 16px;
+}
+
+.theme-icon-with-Label .btn-social>:first-child {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 45px;
+    line-height: 34px;
+    font-size: 25px;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    padding: 4px 0;
+}
+
+
+.btn-social span {
+    padding: 2px 12px;
+}
+
+/* Theme Size Mode */
+.theme-icon-big .btn-social>:first-child {
+    font-size: 25px;
+}
+
+.theme-icon-bigest .btn-social>:first-child {
+    font-size: 32px;
+}
+
+.theme-icon-small .btn-social>:first-child {
+    font-size: 22px;
+}
+
+.theme-icon-smallest .btn-social>:first-child {
+    font-size: 18px;
+}
+
+/* Theme icon style */
+.theme-icon-radius .btn-social {
+    border-radius: 5px;   
+}   
+
+.theme-icon-square .btn-social {
+    border-radius: 0;
+}
+
+.theme-icon-round .btn-social {
+    border-radius: 50px;
+}
+
+.theme-icon-round .btn-social>:first-child {
+    border-right: none;
+}
+
+/* Theme background dark */
+.theme-icon-bg-dark .btn-social {
+    background: #000;
+}
+
+/* icon only */
+.theme-icon-with-icononly .btn-social>:first-child {
+    border-right: none;
+}
+
+
+.theme-icon-bg-light .btn-social {
+    background: transparent;
+    color: #000;
+}
+
+/* dark Button Css */
+.theme-icon-bg-dark .btn-social.btn-facebook {
+    background-color: #2d4373;
+}
+
+.theme-icon-bg-dark .btn-social.btn-facebook:hover {
+    background-color: #3b5998;
+}
+
+
+
+/* light btn icons */
+.theme-icon-bg-light .btn-social.btn-facebook {
+    background-color: rgba(0,0,0,0.1);
+    color: #2d4373;
+}
+
+
+.theme-icon-bg-light .btn-social.btn-facebook:hover {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+/* style-1 animation effect */
+.theme-icon-with-style1 .btn-social.btn-facebook:hover {
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+/* style-2 animation hover effect */
+.theme-icon-with-style2 .btn-social {
+    background-color: #fff;
+    color: #000;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.theme-icon-with-style2 .btn-social:hover:before {
+    top: 0;
+    color: #fff;
+}
+
+.theme-icon-with-style2 .btn-social:hover {
+    color: #fff;
+}
+
+.theme-icon-with-style2 .btn-social:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: .5s;
+    z-index: -1;
+}
+
+.theme-icon-with-style2 .btn-social.btn-facebook:before {
+    content: "";
+    background: #3b5999;
+}
+
+/* tooltips */
+.theme-icon-with-tooltip .btn-social:hover span {
+    bottom: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.theme-icon-with-tooltip .btn-social span {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    padding: 5px 7px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+.theme-icon-with-tooltip .btn-social span:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    bottom: -5px;
+    left: 40px;
+}
+
+.theme-icon-with-tooltip .btn-social.btn-facebook span {
+    background-color: #3b5999;
+}
+
+.theme-icon-with-tooltip .btn-social.btn-facebook span::before {
+    content: "";
+    border-top: 5px solid #3b5999;
+}
+
+
+
+
+.theme-icon-with-tooltip .btn-social>:first-child {
+    border-right: none;
+}
+
+.theme-icon-with-tooltip.theme-icon-round span {
+    border-radius: 50px;
+}
+
+
+/* hover label effect */
+.theme-icon-with-hoverlabel .btn-social {
+    display: inline-block;
+    transition: 0.2s;
+    
+}
+.theme-icon-with-hoverlabel .btn-social span {
+    transition: 0.2s;
+    display: none;
+
+}
+
+.theme-icon-with-hoverlabel .btn-social:hover {
+    display: flex;
+}
+
+.theme-icon-with-hoverlabel .btn-social:hover span {
+    display: block;
+}
+
+/* style 3 animation effect */
+.theme-icon-with-style3 .btn-social:hover span {
+    bottom: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.theme-icon-with-style3 .btn-social span {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+    padding: 5px 7px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+.theme-icon-with-style3 .btn-social span:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    bottom: -5px;
+    left: 40px;
+}
+
+.theme-icon-with-style3 .btn-social.btn-facebook span {
+    background-color: #3b5999;
+}
+
+.theme-icon-with-style3 .btn-social.btn-facebook span::before {
+    content: "";
+    border-top: 5px solid #3b5999;
+}
+
+.theme-icon-with-style3 .btn-social>:first-child {
+    border-right: none;
+}
+
+.theme-icon-with-style3.theme-icon-round span {
+    border-radius: 50px;
+}
+
+/* Style 4 animations effects */
+
+.theme-icon-with-style4 .btn-social {
+    background: transparent;
+    border: 0;
+    color: #000;
+    padding: 0;
+}
+
+.theme-icon-with-style4 .btn-social i {
+    padding: 4px;
+    border: 1px solid;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.theme-icon-with-style4 .btn-social span {
+    padding: 8px 12px;
+    background: #fff;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    border-radius: 49px;
+}
+
+.theme-icon-with-style4 .btn-social.btn-facebook i {
+    background-color: #3b5999;
+}
+
+.theme-icon-with-style4 .btn-social>:first-child {
+    border: 0;
+}
+
+.theme-icon-with-style4 .btn-social:hover i {
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
+}
+
+.theme-icon-with-style4 .btn-social i {
+    transition: all .3s ease-in;
+}
+
+/* style 5 animations effects */
+.theme-icon-with-style5 .btn-social,
+.theme-icon-with-style6 .btn-social {
+    background: transparent;
+    border: 2px solid;
+}
+
+.theme-icon-with-style5 .btn-social.btn-facebook,
+.theme-icon-with-style6 .btn-social.btn-facebook {
+    border-color:#2d4373;
+    color: #2d4373;
+}
+
+.theme-icon-with-style5 .btn-social.btn-facebook:hover {
+    color: #3b5998;
+    box-shadow: 0 0 14px 0 #3b5998;
+}
+
+
+
+/* style 6 animations hover effects */
+.theme-icon-with-style6 .btn-social {
+    background-color: #fff;
+    color: #000;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.theme-icon-with-style6 .btn-social:hover:after {
+    top: 0;
+    color: #fff;
+}
+
+.theme-icon-with-style6 .btn-social:hover {
+    color: #fff;
+}
+
+.theme-icon-with-style6 .btn-social:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: .5s;
+    z-index: -1;
+}
+
+.theme-icon-with-style6 .btn-social.btn-facebook:after {
+    content: "";
+    background: #3b5999;
+}
+
+.theme-icon-with-style6 .btn-social:focus::after, 
+.theme-icon-with-style6 .btn-social:hover::after {
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    margin-left: calc(-50% - 1px);
+}
+
+.theme-icon-with-style6 .btn-social::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    transition: 0.3s;
+}
+
+
+/* style 7 hover animations effects */
+.theme-icon-with-style7 .btn-social:focus:before, 
+.theme-icon-with-style7 .btn-social:hover:before {
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.theme-icon-with-style7 .btn-social.btn-facebook:before {
+    background-color: #3b5999;
+}
+
+.theme-icon-with-style7 .btn-social:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.theme-icon-with-style7 .btn-social:before {
+    top: 90%;
+    left: -110%;
+}
+
+.theme-icon-with-style7 .btn-social, 
+.theme-icon-with-style7 .btn-social:before, 
+.theme-icon-with-style7 .btn-social .fa {
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.theme-icon-with-style7 .btn-facebook {
+    background: transparent;
+    color: #3b5998;
+}
+
+.theme-icon-with-style7 .btn-social.btn-facebook {
+    background: transparent;
+    color: #3b5999;
+}
+
+.theme-icon-with-style7 .btn-social {
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 5px 15px -5px rgb(0 0 0 / 10%);
+    opacity: 0.99;
+}
+
+.theme-icon-with-style7 .btn-social.btn:focus i, 
+.theme-icon-with-style7 .btn-social.btn:hover i,
+.theme-icon-with-style7 .btn-social.btn:focus span,
+.theme-icon-with-style7 .btn-social.btn:hover span {
+    color: #fff;
+}
+
+/* style 8 animation hover effect */
+.theme-icon-with-style8 .btn-social:hover i {
+    transition: transform 0.4s ease-out;
+    transform: rotateZ(360deg);
+}
+
+/* style 9 animation hover effect */
+.theme-icon-with-style9 .btn-social:hover, 
+.theme-icon-with-style9 .btn-social:focus, 
+.theme-icon-with-style9 .btn-social:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+.theme-icon-with-style9 .btn-social {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+
+/* style 10 animations hover effects */
+.theme-icon-with-style10 .btn-social {
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.theme-icon-with-style10.theme-icon-bg-dark .btn-social {
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.theme-icon-with-style10 .btn-social.btn-facebook {
+    border: 1px solid #3b5999;
+}
+
+.theme-icon-with-style10 .btn-social.btn-facebook:hover {
+    color: #3b5999;
+}
+
+.theme-icon-with-style10 .btn-social:hover:before, 
+.theme-icon-with-style10 .btn-social:hover:after {
+    width: 0;
+}
+
+.theme-icon-with-style10 .btn-social::before, 
+.theme-icon-with-style10 .btn-social::after {
+    content: "";
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+    width: 51%;
+}
+
+.theme-icon-with-style10 .btn-social.btn-facebook::before, 
+.theme-icon-with-style10 .btn-social.btn-facebook::after {
+    content: "";
+    background-color: #3b5999;
+}
+
+.theme-icon-with-style10 .btn-social:hover:before, 
+.theme-icon-with-style10 .btn-social:hover:after {
+    width: 0;
+}
+
+.theme-icon-with-style10 .btn-social::after {
+    right: 0;
+    left: auto;
+}
+
+.theme-icon-with-style10.theme-icon-bg-dark .btn-social:hover {
+    color: #fff;
+}
+
+.tx-ns-social-login .btn.btn-facebook {
+    background-color:#1877F2;
+}
+
+.tx-ns-social-login .btn.btn-facebook:hover {
+    background-color:#2d4373;
+}
+
+.tx-ns-social-login .theme-icon-with-hoverlabel .btn-social {
+    transition: all 1s ease-in-out;
+}
+
+.tx-ns-social-login .social-icon-list span {
+    color: #fff;
+}
+
+.tx-ns-social-login .theme-icon-with-style9 li a {
+    display:flex;
+}
+
+.tx-ns-social-login a {
+    text-decoration:none;
+} 
+
+.tx-ns-social-login .theme-icon-full-width .btn-social {
+    width:auto;
+}

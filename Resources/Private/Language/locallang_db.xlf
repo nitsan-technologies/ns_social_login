@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-09-22T07:55:50Z" product-name="ns_social_login">
+		<header/>
+		<body>
+			<trans-unit id="nssociallogin_pi1.title">
+				<source>Social Login</source>
+			</trans-unit>
+			<trans-unit id="nssociallogin_pi1.description">
+				<source>Allow frontend user to login with their social media account like Facebook, Google, etc.</source>
+			</trans-unit>
+			<trans-unit id="fe_users.tx_ns_social_login_source">
+				<source>Provider</source>
+			</trans-unit>
+			<trans-unit id="fe_users.tx_ns_social_login_identifier">
+                <source>Identifier</source>
+            </trans-unit>
+			<trans-unit id="fe_users.tab.social">
+				<source>Social auth</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

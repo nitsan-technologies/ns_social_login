@@ -1,0 +1,16 @@
+mod.wizards.newContentElement.wizardItems {
+  plugins {
+    elements {
+      nssociallogin_pi1 {
+        iconIdentifier = plugin-nssociallogin
+        title = LLL:EXT:ns_social_login/Resources/Private/Language/locallang_db.xlf:nssociallogin_pi1.title
+        description = LLL:EXT:ns_social_login/Resources/Private/Language/locallang_db.xlf:nssociallogin_pi1.description
+        tt_content_defValues {
+          CType = list
+          list_type = nssociallogin_pi1
+        }
+      }
+    }
+    show := *
+  }
+}

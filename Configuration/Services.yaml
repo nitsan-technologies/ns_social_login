@@ -1,0 +1,17 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+
+  NITSAN\NsSocialLogin\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+
+  # Add custom toolbar
+  NITSAN\NsSocialLogin\EventListener\ClearCacheEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'ns-social-login/clear-cache'
+        event: TYPO3\CMS\Backend\Backend\Event\ModifyClearCacheActionsEvent

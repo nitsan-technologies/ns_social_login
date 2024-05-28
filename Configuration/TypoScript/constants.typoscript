@@ -1,0 +1,15 @@
+plugin.tx_nssociallogin {
+    view {
+        # cat=plugin.tx_ns_social_login/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:ns_social_login/Resources/Private/Templates/
+        # cat=plugin.tx_ns_social_login/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:ns_social_login/Resources/Private/Partials/
+        # cat=plugin.tx_ns_social_login/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:ns_social_login/Resources/Private/Layouts/
+    }
+
+    settings {
+        # cat=plugin.tx_ns_social_login/enable; type=boolean; label=Enable bootstrap social css
+        includeBoostrapSocial = 1
+    }
+}
