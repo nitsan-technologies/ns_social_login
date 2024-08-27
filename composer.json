@@ -1,19 +1,30 @@
 {
     "name": "nitsan/ns-social-login",
     "type": "typo3-cms-extension",
-    "description": "https://t3planet.com/ns-social-login-typo3-extension",
+    "description": "Meet our all-in-one TYPO3 Social Login extension, which allows users to log in and register using various social media accounts directly from your TYPO3 frontend. With this extension, users can easily access your site using popular platforms like Facebook, Google, Twitter, LinkedIn, Instagram, OpenID, Apple, Discord, Keycloak, Slack, Telegram, Dropbox, and more. Get seamless, one-click frontend login with the TYPO3 Social Login extension. Explore the Demo, Product Page, Documentation & Support: https://t3planet.com/typo3-social-login-extension",
     "authors": [
         {
-            "name": "T3:Rohan Parmar, T3:Nilesh Malankiya, QA:Shrijay Mori",
+            "name": "T3:Rohan Parmar, T3:Nilesh Malankiya, QA:Krishna Dhapa",
             "role": "Developer"
         }
     ],
-    "homepage": "https://t3planet.com/ns-social-login-typo3-extension",
     "keywords": [
         "TYPO3",
-        "extension",
-        "HybridAuth",
-        "SocialLogin"
+        "Social Login",
+        "Facebook",
+        "Google",
+        "Twitter",
+        "LinkedIn",
+        "Instagram",
+        "OpenID",
+        "Apple",
+        "Discord",
+        "Keycloak",
+        "Slack",
+        "Telegram",
+        "Dropbox",
+        "Frontend Login",
+        "User Authentication"
     ],
     "support": {
         "issues": "https://t3planet.com/support"
@@ -21,7 +32,8 @@
     "license" : "GPL-3.0-or-later",
     "require": {
         "typo3/cms-core": "^9 || ^10  || ^11 || ^12",
-        "hybridauth/hybridauth": "^3"
+        "hybridauth/hybridauth": "^3",
+        "php": ">=7.4"
     },
     "autoload": {
         "psr-4": {
