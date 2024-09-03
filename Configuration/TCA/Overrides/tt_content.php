@@ -15,7 +15,9 @@ if (version_compare($typo3VersionArray['version_main'], '11', '>=')) {
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
     $name,
     'Pi1',
-    'Social Login'
+    'Social Login',
+    'plugin-nssociallogin',
+    'plugins'
 );
 
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['nssociallogin_pi1'] = 'recursive,select_key,pages';

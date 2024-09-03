@@ -105,7 +105,7 @@ class AuthController extends ActionController
      */
     private function getProviderData(): array
     {
-        
+
         if (!$this->extConfig['facebook_enable']) {
             return [];
         } else {

@@ -27,7 +27,7 @@ $tca = [
             'type' => 'input',
             'size' => '10',
             'readOnly' => 1,
-            'default'=> 0,
+            'default' => 0,
         ],
     ],
 ];

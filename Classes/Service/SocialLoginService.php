@@ -49,12 +49,12 @@ class SocialLoginService extends AbstractAuthenticationService
     /**
      * 100
      */
-    const STATUS_AUTHENTICATION_FAILURE_CONTINUE = 100;
+    public const STATUS_AUTHENTICATION_FAILURE_CONTINUE = 100;
 
     /**
      * 200 - authenticated and no more checking needed - useful for IP checking without password
      */
-    const STATUS_AUTHENTICATION_SUCCESS_BREAK = 200;
+    public const STATUS_AUTHENTICATION_SUCCESS_BREAK = 200;
 
     /**
      * @return bool
@@ -67,8 +67,12 @@ class SocialLoginService extends AbstractAuthenticationService
         $this->currentTypo3Version = (int)$typo3VersionArray['version_main'];
 
         $this->extConfig = SiteConfigUtility::getAllConstants();
-        // @extensionScannerIgnoreLine
-        $provider = GeneralUtility::_GP('tx_nssociallogin_pi1')['provider'] ?? '';
+        if ($this->currentTypo3Version == 13){
+            $provider = $_REQUEST['tx_nssociallogin_pi1']['provider'] ?? '';
+        }else{
+            // @extensionScannerIgnoreLine
+            $provider = GeneralUtility::_GP('tx_nssociallogin_pi1')['provider'] ?? '';
+        }
         $this->provider = htmlspecialchars($provider);
         $this->hybridStorageSession = new Session();
 
@@ -148,7 +152,7 @@ class SocialLoginService extends AbstractAuthenticationService
                     'first_name' => $firstName,
                     'last_name' => $lastName,
                     'password' => $hashedPassword,
-                    'email' => $hybridUser->email ? $this->cleanData($hybridUser->email):'',
+                    'email' => $hybridUser->email ? $this->cleanData($hybridUser->email) : '',
                     'telephone' => $telephone,
                     'address' => $address,
                     'city' => $city,
@@ -249,7 +253,7 @@ class SocialLoginService extends AbstractAuthenticationService
      */
     protected function isServiceAvailable(): bool
     {
-        return (boolean)$this->extConfig[strtolower($this->provider) . '_enable'];
+        return (bool)$this->extConfig[strtolower($this->provider) . '_enable'];
     }
 
     /**

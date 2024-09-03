@@ -12,10 +12,10 @@ $EM_CONF['ns_social_login'] = [
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '1.0.0',
+    'version' => '2.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0-12.4.99',
+            'typo3' => '9.5.0-13.9.99',
         ],
         'conflicts' => [
         ],
@@ -23,6 +23,9 @@ $EM_CONF['ns_social_login'] = [
         ],
     ],
     'autoload' => [
-        'classmap' => ['Classes/', 'Library/']
+        'classmap' => [
+            'Classes/',
+            'Library/'
+        ]
     ]
 ];
