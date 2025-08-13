@@ -4,6 +4,9 @@ namespace NITSAN\NsSocialLogin\Utility;
 
 use Hybridauth\Hybridauth;
 use Hybridauth\Storage\Session;
+use TYPO3\CMS\Core\Log\Logger;
+use TYPO3\CMS\Core\Log\LogLevel;
+use TYPO3\CMS\Core\Log\LogManager;
 use TYPO3\CMS\Core\Site\SiteFinder;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManager;
@@ -16,22 +19,28 @@ class AuthUtility
     /**
      * @var array
      */
-    protected array $config = [];
+    protected $config = [];
 
     /**
      * @var array
      */
-    protected array $extConfig = [];
+    protected $extConfig = [];
 
     /**
-     * @var Hybridauth $hybridAuth
+     * @var \Hybridauth\Hybridauth
      */
-    protected Hybridauth $hybridAuth;
+    protected $hybridAuth;
 
     /**
-     * @var ConfigurationManager
+     * @var \Psr\Log\LoggerInterface
      */
-    protected ConfigurationManager $configurationManager;
+    protected $logger;
+
+    /**
+     * @var \TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface
+     */
+    protected $configurationManager;
+
 
     protected $site;
 
@@ -39,7 +48,7 @@ class AuthUtility
     {
         $this->site = GeneralUtility::makeInstance(SiteFinder::class);
         $this->extConfig = SiteConfigUtility::getAllConstants();
-        $this->config['callback'] = GeneralUtility::getIndpEnv('TYPO3_SITE_URL') . '?type=1712813073';
+        $this->config['callback'] = GeneralUtility::getIndpEnv('TYPO3_SITE_URL') . 'oauth';
         if (isset($this->extConfig['facebook_enable']) && $this->extConfig['facebook_enable']) {
             $this->config['providers']['Facebook'] = [
                 'enabled' =>  $this->extConfig['facebook_enable'],
@@ -47,10 +56,17 @@ class AuthUtility
                     'id' => $this->extConfig['facebook_appid'],
                     'secret' => $this->extConfig['facebook_app_secret'],
                 ],
-                'scope'   => 'email',
-                'display' => 'page',
+                'scope'   => $this->extConfig['facebook_app_scope'],
+                'display' => $this->extConfig['facebook_display_mode'],
             ];
         }
+       
+    
+    
+       
+        /* @var $logManager LogManager */
+        $logManager = GeneralUtility::makeInstance(LogManager::class);
+        $this->logger = $logManager->getLogger(__CLASS__);
         $this->hybridAuth = new Hybridauth($this->config);
     }
 
@@ -65,6 +81,13 @@ class AuthUtility
             $service = $hybridAuth->authenticate($provider);
             $socialUser = $service->getUserProfile();
         } catch (\Exception $exception) {
+            $error = $exception->getMessage();
+            $logManager = GeneralUtility::makeInstance(LogManager::class);
+            $this->logger = $logManager->getLogger(__CLASS__);
+            $this->logger->log(
+                LogLevel::ERROR,
+                $error
+            );
             $hybridStorageSession = new Session();
             $hybridStorageSession->set('provider', '');
             echo $exception->getMessage();

@@ -7,9 +7,7 @@ plugin.tx_nssociallogin {
         # cat=plugin.tx_ns_social_login/file; type=string; label=Path to template layouts (FE)
         layoutRootPath = EXT:ns_social_login/Resources/Private/Layouts/
     }
-
-    settings {
-        # cat=plugin.tx_ns_social_login/enable; type=boolean; label=Enable bootstrap social css
-        includeBoostrapSocial = 1
-    }
+    
 }
+
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ns_social_login/Configuration/TypoScript/Settings/" extensions="typoscript">

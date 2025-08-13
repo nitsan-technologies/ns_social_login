@@ -6,21 +6,16 @@ plugin {
             layoutRootPaths.0 = {$plugin.tx_nssociallogin.view.layoutRootPath}
         }
         settings {
-            includeBoostrapSocial = {$plugin.tx_nssociallogin.settings.includeBoostrapSocial}
-        }
-    }
-    tx_felogin_pi1 {
-        socialauth.wrap = |
-        socialauth_provider {
-            facebook = TEXT
-            facebook {
-                typolink {
-                    #Custom class like bootstrap social or title
-                    ATagParams = class="btn btn-block btn-social btn-facebook" rel="nofollow"
+            styleConfig {
+                style {
+                    style = {$plugin.tx_nssociallogin.styleConfig.style.style}
                 }
-                #wrap provider
-                wrap = |
-                stdWrap.dataWrap = <span class="fa fa-facebook"></span>{LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:facebook.label}
+                facebook {
+                    label = {$plugin.tx_nssociallogin.styleConfig.facebook.label}
+                    icon = {$plugin.tx_nssociallogin.styleConfig.facebook.icon}
+                }
+        
+               
             }
         }
     }

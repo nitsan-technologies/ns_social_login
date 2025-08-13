@@ -12,17 +12,17 @@ class FrontendUserGroup
     /**
      * @var string
      */
-    protected string $title = '';
+    protected $title = '';
 
     /**
      * @var string
      */
-    protected string $description = '';
+    protected $description = '';
 
     /**
-     * @var ObjectStorage<FrontendUserGroup>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FrontendUserGroup>
      */
-    protected ObjectStorage $subgroup;
+    protected $subgroup;
 
     /**
      * Constructs a new Frontend User Group

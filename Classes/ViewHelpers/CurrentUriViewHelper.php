@@ -14,7 +14,6 @@ class CurrentUriViewHelper extends AbstractViewHelper
      */
     public function render(): string
     {
-        $url = GeneralUtility::getIndpEnv('TYPO3_REQUEST_URL');
-        return $url;
+        return GeneralUtility::getIndpEnv('TYPO3_REQUEST_URL');
     }
 }

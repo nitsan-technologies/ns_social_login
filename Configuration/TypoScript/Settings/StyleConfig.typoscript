@@ -1,0 +1,25 @@
+############################
+### CUSTOM SUBCATEGORIES ###
+###########################
+
+# customsubcategory=20_fbappid=LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:nssociallogin.facebook
+# customsubcategory=300_storage=LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:nssociallogin.storage
+# customsubcategory=10_styleConfig=LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:nssociallogin.styleSettings
+
+plugin.tx_nssociallogin {  
+    styleConfig {
+        style {
+            #cat = social login : styling/10_styleConfig/100; type=options[LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:nssociallogin.style1=s1, LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:nssociallogin.style2=s2, LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:nssociallogin.style3=s3];  label=LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:nssociallogin.selectStyle
+            style = 
+        }
+        facebook {
+            #cat = social login : styling/20_fbappid/10; type=text; label=LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:nssociallogin.sociallabel
+            label =
+
+            #cat = social login : styling/20_fbappid/20; type=text; label=LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:nssociallogin.socialiconpath
+            icon =
+        }
+          
+
+    }
+}
