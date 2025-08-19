@@ -18,4 +18,10 @@ if (version_compare($typo3VersionArray['version_main'], '11', '>=')) {
     'Social Login'
 );
 
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['nssociallogin_pi1'] = 'pi_flexform';
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['nssociallogin_pi1'] = 'recursive,select_key,pages';
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
+    'nssociallogin_pi1',
+    'FILE:EXT:ns_social_login/Configuration/FlexForms/flexform_list.xml'
+);

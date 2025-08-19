@@ -1,34 +1,119 @@
 <f:layout name="Default" />
 <f:section name="main">
+  <f:flashMessages />
   <f:security.ifAuthenticated>
     <f:then>
-      <f:link.page class="btn btn-danger" id="ns-sociallogin-logout"
-        additionalParams="{nsSocialLogin: 1, logintype:'logout', providers:providers.0}" addQueryString="TRUE"
+      <f:link.page class="btn btn-danger" id="ns-sociallogin-logout" additionalParams="{nsSocialLogin: 1, logintype:'logout', providers:providers.0}" addQueryString="TRUE"
         title="{f:translate(key:'logout.label')}" noCache="TRUE">
         <f:translate key="logout.label" />
       </f:link.page>
     </f:then>
     <f:else>
-      <f:if condition="{provider}">
-        <div
-          class="theme-social-login theme-icon-big theme-icon-auto-width theme-icon-color theme-icon-radius theme-icon-with-Label theme-icon-full-width theme-icon-with-style">
-          <ul class="social-icon-list">
-            <f:variable name="authUrl">
-              <f:uri.page pageType="1712813073"
-                additionalParams="{tx_nssociallogin_pi1:{provider:provider.name,redirect:'{sociallogin:currentUri()}'}}"
-                noCache="TRUE" />
-            </f:variable>
-            <li>
-              <a href="{authUrl}" class="btn btn-block btn-social btn-facebook">
-                <f:image src="EXT:ns_social_login/Resources/Public/Icons/facebook.svg" height="24" />
-                <span>
-                  <f:translate key="facebook.label" extensionName="NsSocialLogin"/>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <f:if condition="{userDisabled}">
+        <f:then>
+          <div class="typo3-messages" style="width: fit-content !important;">
+            <div class="alert alert-warning">
+              <h4 class="alert-message">{userDisabled}</h4>
+            </div>
+          </div>
+        </f:then>
+        <f:else>
+          <f:if condition="{providers -> f:count()} == 0">
+            <div class="typo3-messages">
+              <div class="alert alert-warning">
+                <h4 class="alert-message"><f:translate key="noprovider" extensionName="NsSocialLogin" /></h4>
+              </div>
+            </div>
+          </f:if>
+        </f:else>
+      </f:if>
+      <f:if condition="{providers}">
+        <f:switch expression="{styleConfig}">
+            <f:case value="s2">
+              <f:render section="providers"
+                        arguments="{styleClasses:'theme-icon-with-hoverlabel', providers:providers
+                        }"
+              />
+            </f:case>
+            <f:case value="s3">
+              <f:render section="providers"
+                        arguments="{styleClasses:'theme-icon-with-style9 theme-icon-bg-dark theme-icon-with-Label',
+                        providers:providers
+                        }"
+              />
+            </f:case>
+            <f:defaultCase>
+              <f:render section="providers"
+                        arguments="{styleClasses:'theme-icon-with-Label theme-icon-full-width theme-icon-with-style',
+                        providers:providers
+                        }"
+              />
+            </f:defaultCase>
+        </f:switch>
       </f:if>
     </f:else>
   </f:security.ifAuthenticated>
+</f:section>
+
+<f:section name="providers">
+  <div class="theme-social-login theme-icon-big theme-icon-auto-width theme-icon-color theme-icon-radius {styleClasses}">
+    <ul class="social-icon-list">
+      <f:for each="{providers}" as="provider">
+        <f:variable name="authUrl">
+          <f:uri.page pageType="1712813073"
+                      additionalParams="{tx_nssociallogin_pi1:{provider:provider.name,redirect:'{sociallogin:currentUri()}'}}"
+                      noCache="TRUE" />
+        </f:variable>
+        <li>
+          <f:if condition="{provider.displayMode} == 'popup'">
+            <f:then>
+              <a href="#" name="popupBtn" 
+                 class="btn btn-block btn-social btn-{provider.name}" data-url="{authUrl}">
+                <f:if condition="{settings.styleConfig.{provider.name}.icon}">
+                  <f:then>
+                    <f:image src="{settings.styleConfig.{provider.name}.icon}" height="24"/>
+                  </f:then>
+                  <f:else>
+                    <f:image src="EXT:ns_social_login/Resources/Public/Icons/{provider.name}.svg" height="24"/>
+                  </f:else>
+                </f:if>
+                <span>
+                  <f:if condition="{settings.styleConfig.{provider.name}.label}">
+                    <f:then>
+                      {settings.styleConfig.{provider.name}.label}
+                    </f:then>
+                    <f:else>
+                      <f:translate key="{provider.name}.label" />
+                    </f:else>
+                  </f:if>
+                </span>
+              </a>
+            </f:then>
+            <f:else>
+              <a href="{authUrl}" class="btn btn-block btn-social btn-{provider.name}">
+                <f:if condition="{settings.styleConfig.{provider.name}.icon}">
+                  <f:then>
+                    <f:image src="{settings.styleConfig.{provider.name}.icon}" height="24" />
+                  </f:then>
+                  <f:else>
+                    <f:image src="EXT:ns_social_login/Resources/Public/Icons/{provider.name}.svg" height="24" />
+                  </f:else>
+                </f:if>
+                <span>
+                  <f:if condition="{settings.styleConfig.{provider.name}.label}">
+                    <f:then>
+                      {settings.styleConfig.{provider.name}.label}
+                    </f:then>
+                    <f:else>
+                      <f:translate key="{provider.name}.label" />
+                    </f:else>
+                  </f:if>
+                </span>
+              </a>
+            </f:else>
+          </f:if>
+        </li>
+      </f:for>
+    </ul>
+  </div>
 </f:section>

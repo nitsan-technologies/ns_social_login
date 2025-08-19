@@ -2,7 +2,6 @@
 
 namespace NITSAN\NsSocialLogin\EventListener;
 
-use TYPO3\CMS\Backend\Backend\Event\ModifyClearCacheActionsEvent;
 use TYPO3\CMS\Backend\Routing\UriBuilder;
 
 class ClearCacheEventListener
@@ -10,7 +9,7 @@ class ClearCacheEventListener
     /**
      * @var UriBuilder
      */
-    private UriBuilder $uriBuilder;
+    private $uriBuilder;
 
     /**
      * @param UriBuilder $uriBuilder
@@ -20,7 +19,7 @@ class ClearCacheEventListener
         $this->uriBuilder = $uriBuilder;
     }
 
-    public function __invoke(ModifyClearCacheActionsEvent $event): void
+    public function __invoke(\TYPO3\CMS\Backend\Backend\Event\ModifyClearCacheActionsEvent $event): void
     {
         $event->addCacheAction([
             'id' => 'cache_nssocial',

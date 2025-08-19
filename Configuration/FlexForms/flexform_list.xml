@@ -1,0 +1,45 @@
+<T3DataStructure>
+    <sheets>
+        <listConfig>
+			<ROOT>
+				
+					<sheetTitle>LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:sheetTitle</sheetTitle>
+				
+				<type>array</type>
+				<el>
+					<settings.style>
+                        <displayCond>FIELD:settings.useGlobalStyle:!=:1</displayCond>
+                        <label>LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:style</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <items>
+                                <numIndex index="0">
+                                    <numIndex index="0">LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:style.1</numIndex>
+                                    <numIndex index="1">s1</numIndex>
+                                </numIndex>
+                                <numIndex index="2">
+                                    <numIndex index="0">LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:style.2</numIndex>
+                                    <numIndex index="1">s2</numIndex>
+                                </numIndex>
+                                <numIndex index="3">
+                                    <numIndex index="0">LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:style.3</numIndex>
+                                    <numIndex index="1">s3</numIndex>
+                                </numIndex>
+                            </items>
+                        </config>
+                    </settings.style>
+                    <settings.useGlobalStyle>
+                        <onChange>reload</onChange>
+                        <label>LLL:EXT:ns_social_login/Resources/Private/Language/locallang.xlf:useGlobalSettings</label>
+                        <config>
+                            <type>check</type>
+                            <default>0</default>
+                            <renderType>checkboxToggle</renderType>
+                        </config>
+                    </settings.useGlobalStyle>
+                </el>
+			</ROOT>
+		</listConfig>
+    </sheets>
+</T3DataStructure>

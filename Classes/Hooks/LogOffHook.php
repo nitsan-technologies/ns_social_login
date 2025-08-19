@@ -25,8 +25,7 @@ class LogOffHook
             $authUtility->logout();
             $hybridStorageSession = new Session();
             $hybridStorageSession->set('provider', '');
-        } catch (\Exception $e) {
-        }
+        } catch (\Exception $e) {}
         //remove session user
         $pObj->removeSessionData();
         $pObj->removeCookie('PHPSESSID');

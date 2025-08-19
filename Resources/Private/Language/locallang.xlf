@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
 	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-18T13:15:38Z" product-name="ns_social_login">
-		<header/>
 		<body>
 			<trans-unit id="logout.label">
 				<source>Logout</source>
@@ -21,6 +20,120 @@
             <trans-unit id="clear_cache_success">
                 <source>Caches Cleared</source>
             </trans-unit>
+            <trans-unit id="nssociallogin.scope">
+            	<source>Scope of Get Attributes</source>
+            </trans-unit>
+			<trans-unit id="nssociallogin.facebook">
+				<source>Facebook</source>
+			</trans-unit>
+			<trans-unit id="nssociallogin.enable_facebook">
+				<source>Enable Facebook</source>
+			</trans-unit>
+            <trans-unit id="save">
+            	<source>Save</source>
+            </trans-unit>
+			<trans-unit id="nssociallogin.x">
+				<source>X</source>
+			</trans-unit>
+			<trans-unit id="nssociallogin.storage">
+				<source>Storage Settings</source>
+			</trans-unit>
+             <trans-unit id="nssociallogin.storagePid">
+                <source>Storage Page</source>
+            </trans-unit>
+            <trans-unit id="nssociallogin.defaultUserGroup">
+                <source>Default User Group</source>
+            </trans-unit>
+            <trans-unit id="nssociallogin.fileStorage">
+            	<source>File Storage</source>
+            </trans-unit>
+            <trans-unit id="nssociallogin.avtarPath">
+            	<source>Avtar Image Path</source>
+            </trans-unit>
+            <trans-unit id="nssociallogin.displayMode">
+            	<source>Display Mode</source>
+            </trans-unit>
+			<trans-unit id="nssociallogin.styleSettings">
+            	<source>Style Settings</source>
+            </trans-unit>
+			<trans-unit id="nssociallogin.selectStyle">
+            	<source>Select Style</source>
+            </trans-unit>
+			<trans-unit id="nssociallogin.style1">
+            	<source>Default</source>
+            </trans-unit>
+			<trans-unit id="nssociallogin.style2">
+            	<source>Icon With Hover</source>
+            </trans-unit>
+			<trans-unit id="nssociallogin.style3">
+            	<source>Icon With Hover Animation</source>
+            </trans-unit>
+			<trans-unit id="nssociallogin.sociallabel">
+            	<source>Label</source>
+            </trans-unit>
+			<trans-unit id="nssociallogin.socialiconpath">
+            	<source>Icon Path</source>
+            </trans-unit>
+			<trans-unit id="nssociallogin.displaymode.page">
+            	<source>Page</source>
+            </trans-unit>
+			<trans-unit id="nssociallogin.displaymode.popup">
+            	<source>Popup</source>
+            </trans-unit>
+			<trans-unit id="ns_social_storage">
+            	<source>Storage Settings</source>
+            </trans-unit>
+			<trans-unit id="nssociallogin.appid">
+                <source>App Id</source>
+            </trans-unit>
+            <trans-unit id="nssociallogin.appSecret">
+                <source>App Secret</source>
+            </trans-unit>
+			<trans-unit id="nssociallogin.clientId">
+                <source>Client Id</source>
+            </trans-unit>
+            <trans-unit id="nssociallogin.clientSecret">
+                <source>Client Secret</source>
+            </trans-unit>
+            <trans-unit id="nssociallogin_pi1.title">
+				<source>Social Login</source>
+			</trans-unit>
+			<trans-unit id="nssociallogin_pi1.description">
+				<source>Allow frontend user to login with their social media account like Facebook, Google, etc.</source>
+			</trans-unit>
+			<trans-unit id="fe_users.tx_ns_social_login_source">
+				<source>Provider</source>
+			</trans-unit>
+			<trans-unit id="fe_users.tx_ns_social_login_identifier">
+                <source>Identifier</source>
+            </trans-unit>
+			<trans-unit id="fe_users.tab.social">
+				<source>Social auth</source>
+			</trans-unit>
+            <trans-unit id="sheetTitle">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="style">
+                <source>Style</source>
+            </trans-unit>
+            <trans-unit id="style.1">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="style.2">
+                <source>Icon With Hover</source>
+            </trans-unit>
+            <trans-unit id="style.3">
+                <source>Icon With Hover Animation</source>
+            </trans-unit>
+			<trans-unit id="useGlobalSettings">
+				<source>Use Global Configurations</source>
+			</trans-unit>
+			<trans-unit id="noprovider">
+				<source>Please Enable Providers From The Site Configuration.</source>
+			</trans-unit>
+			<trans-unit id="userDisabled">
+				<source>User is disabled from BE. Please enable to process further.</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

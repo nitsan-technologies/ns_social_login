@@ -11,113 +11,110 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 class User
 {
     /**
-     * source
-     *
      * @var int
      */
-    protected int $source = 0;
-
-    /**
-     * identifier
-     *
-     * @var string
-     */
-    protected string $identifier = '';
+    protected $source = 0;
 
     /**
      * @var string
      */
-    protected string $username = '';
+    protected $identifier = '';
 
     /**
      * @var string
      */
-    protected string $password = '';
-
-    /**
-     * @var ObjectStorage<FrontendUserGroup>
-     */
-    protected ObjectStorage $usergroup;
+    protected $username = '';
 
     /**
      * @var string
      */
-    protected string $name = '';
+    protected $password = '';
+
+    /**
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FrontendUserGroup>
+     */
+    protected $usergroup;
 
     /**
      * @var string
      */
-    protected string $firstName = '';
+    protected $name = '';
 
     /**
      * @var string
      */
-    protected string $middleName = '';
+    protected $firstName = '';
 
     /**
      * @var string
      */
-    protected string $lastName = '';
+    protected $middleName = '';
 
     /**
      * @var string
      */
-    protected string $address = '';
+    protected $lastName = '';
 
     /**
      * @var string
      */
-    protected string $telephone = '';
+    protected $address = '';
 
     /**
      * @var string
      */
-    protected string $fax = '';
+    protected $telephone = '';
 
     /**
      * @var string
      */
-    protected string $email = '';
+    protected $fax = '';
 
     /**
      * @var string
      */
-    protected string $title = '';
+    protected $email = '';
 
     /**
      * @var string
      */
-    protected string $zip = '';
+    protected $title = '';
 
     /**
      * @var string
      */
-    protected string $city = '';
+    protected $zip = '';
 
     /**
      * @var string
      */
-    protected string $country = '';
+    protected $city = '';
 
     /**
      * @var string
      */
-    protected string $www = '';
+    protected $country = '';
 
     /**
      * @var string
      */
-    protected string $company = '';
+    protected $www = '';
 
     /**
-     * @var ObjectStorage<FileReference>
+     * @var string
      */
-    protected ObjectStorage $image;
+    protected $company = '';
+
+    /**
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+     */
+    protected $image;
 
     /**
      * @var \DateTime|null
      */
-    protected ?\DateTime $lastlogin;
+    protected $lastlogin;
+
 
     /**
      * Constructs a new Front-End User

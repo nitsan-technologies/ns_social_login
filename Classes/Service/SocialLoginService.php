@@ -26,9 +26,10 @@ use TYPO3\CMS\Core\Utility\VersionNumberUtility;
 class SocialLoginService extends AbstractAuthenticationService
 {
     /**
-     * provider
+     * @var string
      */
-    protected string $provider;
+    protected $provider;
+
 
     /**
      * @var array
@@ -36,15 +37,26 @@ class SocialLoginService extends AbstractAuthenticationService
     protected $extConfig = [];
 
     /**
-     * authUtility
-     *
-     * @var AuthUtility
+     * @var array
      */
-    protected AuthUtility $authUtility;
+    protected $serviceProviders = [
+        'facebook' => 1
+    ];
 
+    /**
+     * @var \NITSAN\NsSocialLogin\Utility\AuthUtility
+     */
+    protected $authUtility;
+
+    /**
+     * @var \NITSAN\NsSocialLogin\Session\Session
+     */
     protected $hybridStorageSession;
 
-    protected int $currentTypo3Version = 0;
+    /**
+     * @var int
+     */
+    protected $currentTypo3Version = 0;
 
     /**
      * 100
@@ -67,8 +79,13 @@ class SocialLoginService extends AbstractAuthenticationService
         $this->currentTypo3Version = (int)$typo3VersionArray['version_main'];
 
         $this->extConfig = SiteConfigUtility::getAllConstants();
-        // @extensionScannerIgnoreLine
-        $provider = GeneralUtility::_GP('tx_nssociallogin_pi1')['provider'] ?? '';
+        if($this->currentTypo3Version > 12){
+            $provider = $_REQUEST['tx_nssociallogin_pi1']['provider'] ?? '';
+        } else {
+            // @extensionScannerIgnoreLine
+            $provider = GeneralUtility::_GP('tx_nssociallogin_pi1')['provider'] ?? '';
+        }
+
         $this->provider = htmlspecialchars($provider);
         $this->hybridStorageSession = new Session();
 
@@ -101,7 +118,6 @@ class SocialLoginService extends AbstractAuthenticationService
     /**
      * Find usergroup records
      *
-     * @return bool User informations
      * @throws IllegalFileExtensionException
      * @throws InsufficientFileWritePermissionsException
      * @throws InsufficientFolderAccessPermissionsException
@@ -125,7 +141,7 @@ class SocialLoginService extends AbstractAuthenticationService
                     $hashInstance = GeneralUtility::makeInstance(PasswordHashFactory::class)
                         ->getDefaultHashInstance('FE');
                     $hashedPassword = $hashInstance->getHashedPassword(uniqid('', true));
-                } catch(InvalidPasswordHashException $e) {
+                } catch (InvalidPasswordHashException $e) {
                 }
                 //create username
                 $email = isset($hybridUser->email) && $hybridUser->email !== '' ? $hybridUser->email : $hybridUser->emailVerified;
@@ -148,14 +164,14 @@ class SocialLoginService extends AbstractAuthenticationService
                     'first_name' => $firstName,
                     'last_name' => $lastName,
                     'password' => $hashedPassword,
-                    'email' => $hybridUser->email ? $this->cleanData($hybridUser->email):'',
+                    'email' => $hybridUser->email ? $this->cleanData($hybridUser->email) : '',
                     'telephone' => $telephone,
                     'address' => $address,
                     'city' => $city,
                     'zip' => $zip,
                     'country' => $country,
                     'tx_ns_social_login_identifier' => $this->cleanData($hybridUser->identifier),
-                    'tx_ns_social_login_source' => 1,
+                    'tx_ns_social_login_source' => $this->serviceProviders[$this->provider],
                 ];
                 //remove null values but keep 0
                 $fields = array_filter($fields, 'strlen');
@@ -249,7 +265,7 @@ class SocialLoginService extends AbstractAuthenticationService
      */
     protected function isServiceAvailable(): bool
     {
-        return (boolean)$this->extConfig[strtolower($this->provider) . '_enable'];
+        return (bool)$this->extConfig[strtolower($this->provider) . '_enable'];
     }
 
     /**
@@ -283,7 +299,7 @@ class SocialLoginService extends AbstractAuthenticationService
                 $queryBuilder->expr()->eq(
                     'tx_ns_social_login_source',
                     $queryBuilder->createNamedParameter(
-                        1,
+                        (int)$this->serviceProviders[$this->provider],
                         Connection::PARAM_INT
                     )
                 ),
@@ -409,10 +425,40 @@ class SocialLoginService extends AbstractAuthenticationService
      */
     protected function getUnique(string $username, int $id): string
     {
-        /** @var DataHandler $dataHandler */
-        $dataHandler = GeneralUtility::makeInstance(DataHandler::class);
-        $username = $dataHandler->getUnique('fe_users', 'username', $username, $id, $this->extConfig['file_storage']);
-
-        return $username;
+        $newUsername = $username;
+        $counter = 0;
+        
+        // Check if username already exists (excluding current user)
+        do {
+            $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)
+                ->getQueryBuilderForTable('fe_users');
+            $queryBuilder->getRestrictions()->removeAll()->add(GeneralUtility::makeInstance(DeletedRestriction::class));
+            
+            $queryBuilder->select('uid')
+                ->from('fe_users')
+                ->where(
+                    $queryBuilder->expr()->eq(
+                        'username',
+                        $queryBuilder->createNamedParameter($newUsername, Connection::PARAM_STR)
+                    ),
+                    $queryBuilder->expr()->neq(
+                        'uid',
+                        $queryBuilder->createNamedParameter($id, Connection::PARAM_INT)
+                    )
+                );
+            
+            if ($this->currentTypo3Version >= 11) {
+                $result = $queryBuilder->executeQuery()->fetchAssociative();
+            } else {
+                $result = $queryBuilder->execute()->fetch();
+            }
+            
+            if ($result) {
+                $counter++;
+                $newUsername = $username . $counter;
+            }
+        } while ($result && $counter <= 100);
+        
+        return $newUsername;
     }
 }

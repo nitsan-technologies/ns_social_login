@@ -9,9 +9,22 @@ services:
     resource: '../Classes/*'
     exclude: '../Classes/Domain/Model/*'
 
-  # Add custom toolbar
   NITSAN\NsSocialLogin\EventListener\ClearCacheEventListener:
     tags:
       - name: event.listener
         identifier: 'ns-social-login/clear-cache'
         event: TYPO3\CMS\Backend\Backend\Event\ModifyClearCacheActionsEvent
+
+  NITSAN\NsSocialLogin\Setup:
+    tags:
+      - name: event.listener
+        identifier: 'ns-social-login'
+        method: 'executeOnSignal'
+        event: TYPO3\CMS\Core\Package\Event\AfterPackageActivationEvent
+
+  NITSAN\NsSocialLogin\Hooks\BackendUserLogin:
+    tags:
+      - name: event.listener
+        identifier: 'ns-social-login-backend-login'
+        method: 'dispatch'
+        event: TYPO3\CMS\Core\Authentication\Event\AfterUserLoggedInEvent

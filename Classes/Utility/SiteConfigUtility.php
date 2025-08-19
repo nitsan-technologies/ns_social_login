@@ -6,6 +6,7 @@ use TYPO3\CMS\Core\Http\ServerRequest;
 use TYPO3\CMS\Core\Http\Uri;
 use TYPO3\CMS\Core\Routing\SiteMatcher;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Site\Entity\NullSite;
 
 class SiteConfigUtility
 {
@@ -15,6 +16,10 @@ class SiteConfigUtility
         $request = GeneralUtility::makeInstance(ServerRequest::class, $uri);
         $matcher = GeneralUtility::makeInstance(SiteMatcher::class);
         $routeResult = $matcher->matchRequest($request);
-        return $routeResult->getSite()->getConfiguration();
+        $site = $routeResult->getSite();
+        if ($site instanceof NullSite) {
+            return [];
+        }
+        return $site->getConfiguration();
     }
 }
