@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:ns_social_login/Resources/Private/Language/locallang.xlf date="2015-11-18T13:15:38Z" product-name="ns_social_login">
+	<file source-language="en" datatype="plaintext" original="EXT:ns_social_login/Resources/Private/Language/locallang.xlf date=" 2015-11-18T13:15:38Z" product-name="ns_social_login">
 		<body>
 			<trans-unit id="logout.label">
 				<source>Logout</source>
