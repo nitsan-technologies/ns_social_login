@@ -1,141 +1,183 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff version="1.2">
-  <file source-language="en" target-language="de" datatype="plaintext" original="EXT:ns_social_login/Resources/Private/Language/locallang.xlf" product-name="ns_social_login">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="EXT:ns_social_login/Resources/Private/Language/locallang.xlf" date=" 2015-11-18T13:15:38Z" product-name="ns_social_login">
     <body>
-      <trans-unit id="logout.label" resname="logout.label">
+      <trans-unit id="logout.label">
+        <source>Logout</source>
         <target>Abmelden</target>
       </trans-unit>
-      <trans-unit id="label" resname="label">
-        <target>Etikett</target>
+      <trans-unit id="label">
+        <source>Label</source>
+        <target>Beschriftung</target>
       </trans-unit>
-      <trans-unit id="facebook.label" resname="facebook.label">
+      <trans-unit id="facebook.label">
+        <source>Sign in with Facebook</source>
         <target>Mit Facebook anmelden</target>
       </trans-unit>
-      <trans-unit id="clear_cache" resname="clear_cache">
-        <target>Social Login Cache löschen</target>
+      <trans-unit id="clear_cache">
+        <source>Clear Social Login Cache</source>
+        <target>Sozialen Login-Cache leeren</target>
       </trans-unit>
-      <trans-unit id="clear_cache.description" resname="clear_cache.description">
-        <target>Social Login Cache für Frontend löschen</target>
+      <trans-unit id="clear_cache.description">
+        <source>Clear Social Login cache for Frontend</source>
+        <target>Sozialen Login-Cache für Frontend leeren</target>
       </trans-unit>
-      <trans-unit id="clear_cache_success" resname="clear_cache_success">
+      <trans-unit id="clear_cache_success">
+        <source>Caches Cleared</source>
         <target>Caches gelöscht</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.scope" resname="nssociallogin.scope">
+      <trans-unit id="nssociallogin.scope">
+        <source>Scope of Get Attributes</source>
         <target>Umfang der Attribute abrufen</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.facebook" resname="nssociallogin.facebook">
+      <trans-unit id="nssociallogin.facebook">
+        <source>Facebook</source>
         <target>Facebook</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.enable_facebook" resname="nssociallogin.enable_facebook">
+      <trans-unit id="nssociallogin.enable_facebook">
+        <source>Enable Facebook</source>
         <target>Facebook aktivieren</target>
       </trans-unit>
-      <trans-unit id="save" resname="save">
+      <trans-unit id="save">
+        <source>Save</source>
         <target>Speichern</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.x" resname="nssociallogin.x">
+      <trans-unit id="nssociallogin.x">
+        <source>X</source>
         <target>X</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.storage" resname="nssociallogin.storage">
+      <trans-unit id="nssociallogin.storage">
+        <source>Storage Settings</source>
         <target>Speichereinstellungen</target>
       </trans-unit>
-
-      <trans-unit id="nssociallogin.storagePid" resname="nssociallogin.storagePid">
+      <trans-unit id="nssociallogin.storagePid">
+        <source>Storage Page</source>
         <target>Speicherseite</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.defaultUserGroup" resname="nssociallogin.defaultUserGroup">
+      <trans-unit id="nssociallogin.defaultUserGroup">
+        <source>Default User Group</source>
         <target>Standardbenutzergruppe</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.fileStorage" resname="nssociallogin.fileStorage">
+      <trans-unit id="nssociallogin.fileStorage">
+        <source>File Storage</source>
         <target>Dateispeicher</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.avtarPath" resname="nssociallogin.avtarPath">
-        <target>Avtar Bildpfad</target>
+      <trans-unit id="nssociallogin.avtarPath">
+        <source>Avtar Image Path</source>
+        <target>Avtar-Bildpfad</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.displayMode" resname="nssociallogin.displayMode">
+      <trans-unit id="nssociallogin.displayMode">
+        <source>Display Mode</source>
         <target>Anzeigemodus</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.styleSettings" resname="nssociallogin.styleSettings">
-        <target>Stileinstellungen</target>
+      <trans-unit id="nssociallogin.styleSettings">
+        <source>Style Settings</source>
+        <target>Stil-Einstellungen</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.selectStyle" resname="nssociallogin.selectStyle">
-        <target>Stil auswählen</target>
+      <trans-unit id="nssociallogin.selectStyle">
+        <source>Select Style</source>
+        <target>Stil wählen</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.style1" resname="nssociallogin.style1">
+      <trans-unit id="nssociallogin.style1">
+        <source>Default</source>
         <target>Standard</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.style2" resname="nssociallogin.style2">
+      <trans-unit id="nssociallogin.style2">
+        <source>Icon With Hover</source>
         <target>Symbol mit Hover</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.style3" resname="nssociallogin.style3">
+      <trans-unit id="nssociallogin.style3">
+        <source>Icon With Hover Animation</source>
         <target>Symbol mit Hover-Animation</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.sociallabel" resname="nssociallogin.sociallabel">
-        <target>Etikett</target>
+      <trans-unit id="nssociallogin.sociallabel">
+        <source>Label</source>
+        <target>Beschriftung</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.socialiconpath" resname="nssociallogin.socialiconpath">
+      <trans-unit id="nssociallogin.socialiconpath">
+        <source>Icon Path</source>
         <target>Symbolpfad</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.displaymode.page" resname="nssociallogin.displaymode.page">
+      <trans-unit id="nssociallogin.displaymode.page">
+        <source>Page</source>
         <target>Seite</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.displaymode.popup" resname="nssociallogin.displaymode.popup">
+      <trans-unit id="nssociallogin.displaymode.popup">
+        <source>Popup</source>
         <target>Popup</target>
       </trans-unit>
-      <trans-unit id="ns_social_storage" resname="ns_social_storage">
+      <trans-unit id="ns_social_storage">
+        <source>Storage Settings</source>
         <target>Speichereinstellungen</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.appid" resname="nssociallogin.appid">
+      <trans-unit id="nssociallogin.appid">
+        <source>App Id</source>
         <target>App-ID</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.appSecret" resname="nssociallogin.appSecret">
+      <trans-unit id="nssociallogin.appSecret">
+        <source>App Secret</source>
         <target>App-Geheimnis</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.clientId" resname="nssociallogin.clientId">
+      <trans-unit id="nssociallogin.clientId">
+        <source>Client Id</source>
         <target>Client-ID</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.clientSecret" resname="nssociallogin.clientSecret">
-        <target>Kundengeheimnis</target>
+      <trans-unit id="nssociallogin.clientSecret">
+        <source>Client Secret</source>
+        <target>Client-Geheimnis</target>
       </trans-unit>
-      <trans-unit id="nssociallogin_pi1.title" resname="nssociallogin_pi1.title">
-        <target>Soziales Login</target>
+      <trans-unit id="nssociallogin_pi1.title">
+        <source>Social Login</source>
+        <target>Sozialer Login</target>
       </trans-unit>
-      <trans-unit id="nssociallogin_pi1.description" resname="nssociallogin_pi1.description">
-        <target>Erlauben Sie dem Frontend-Benutzer, sich mit seinem Social-Media-Konto wie Facebook, Google usw. anzumelden.</target>
+      <trans-unit id="nssociallogin_pi1.description">
+        <source>Allow frontend user to login with their social media account like Facebook, Google, etc.</source>
+        <target>Ermöglichen Sie es Frontend-Benutzern, sich mit ihren sozialen Medienkonten wie Facebook, Google usw. anzumelden.</target>
       </trans-unit>
-      <trans-unit id="fe_users.tx_ns_social_login_source" resname="fe_users.tx_ns_social_login_source">
+      <trans-unit id="fe_users.tx_ns_social_login_source">
+        <source>Provider</source>
         <target>Anbieter</target>
       </trans-unit>
-      <trans-unit id="fe_users.tx_ns_social_login_identifier" resname="fe_users.tx_ns_social_login_identifier">
-        <target>Identifikator</target>
+      <trans-unit id="fe_users.tx_ns_social_login_identifier">
+        <source>Identifier</source>
+        <target>Bezeichner</target>
       </trans-unit>
-      <trans-unit id="fe_users.tab.social" resname="fe_users.tab.social">
+      <trans-unit id="fe_users.tab.social">
+        <source>Social auth</source>
         <target>Soziale Authentifizierung</target>
       </trans-unit>
-      <trans-unit id="sheetTitle" resname="sheetTitle">
+      <trans-unit id="sheetTitle">
+        <source>Settings</source>
         <target>Einstellungen</target>
       </trans-unit>
-      <trans-unit id="style" resname="style">
+      <trans-unit id="style">
+        <source>Style</source>
         <target>Stil</target>
       </trans-unit>
-      <trans-unit id="style.1" resname="style.1">
+      <trans-unit id="style.1">
+        <source>Default</source>
         <target>Standard</target>
       </trans-unit>
-      <trans-unit id="style.2" resname="style.2">
+      <trans-unit id="style.2">
+        <source>Icon With Hover</source>
         <target>Symbol mit Hover</target>
       </trans-unit>
-      <trans-unit id="style.3" resname="style.3">
+      <trans-unit id="style.3">
+        <source>Icon With Hover Animation</source>
         <target>Symbol mit Hover-Animation</target>
       </trans-unit>
-      <trans-unit id="useGlobalSettings" resname="useGlobalSettings">
+      <trans-unit id="useGlobalSettings">
+        <source>Use Global Configurations</source>
         <target>Globale Konfigurationen verwenden</target>
       </trans-unit>
       <trans-unit id="noprovider">
-				<source>Bitte aktivieren Sie die Provider in der Website-Konfiguration.</source>
-			</trans-unit>
+        <source>Please Enable Providers From The Site Configuration.</source>
+        <target>Aktivieren Sie die Anbieter in der Website-Konfiguration.</target>
+      </trans-unit>
       <trans-unit id="userDisabled">
-				<source>User is disabled from BE. Please enable to process further.</source>
-        <target>Der Benutzer ist für BE deaktiviert. Bitte aktivieren Sie ihn für die weitere Bearbeitung.</target>
-			</trans-unit>
+        <source>User is disabled from BE. Please enable to process further.</source>
+        <target>Benutzer ist im BE deaktiviert. Bitte aktivieren, um fortzufahren.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
