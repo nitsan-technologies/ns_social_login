@@ -2,181 +2,181 @@
 <xliff version="1.0">
   <file source-language="en" datatype="plaintext" original="EXT:ns_social_login/Resources/Private/Language/locallang.xlf" date=" 2015-11-18T13:15:38Z" product-name="ns_social_login" target-language="de">
     <body>
-      <trans-unit id="logout.label">
+      <trans-unit id="logout.label" approved="yes">
         <source>Logout</source>
-        <target state="translated">Abmelden</target>
+        <target state="final">Abmelden</target>
       </trans-unit>
-      <trans-unit id="label">
+      <trans-unit id="label" approved="yes">
         <source>Label</source>
-        <target state="translated">Etikett</target>
+        <target state="final">Etikett</target>
       </trans-unit>
-      <trans-unit id="facebook.label">
+      <trans-unit id="facebook.label" approved="yes">
         <source>Sign in with Facebook</source>
-        <target state="translated">Mit Facebook anmelden</target>
+        <target state="final">Mit Facebook anmelden</target>
       </trans-unit>
-      <trans-unit id="clear_cache">
+      <trans-unit id="clear_cache" approved="yes">
         <source>Clear Social Login Cache</source>
-        <target state="translated">Social Login Cache löschen</target>
+        <target state="final">Social Login Cache löschen</target>
       </trans-unit>
-      <trans-unit id="clear_cache.description">
+      <trans-unit id="clear_cache.description" approved="yes">
         <source>Clear Social Login cache for Frontend</source>
-        <target state="translated">Social Login Cache für Frontend löschen</target>
+        <target state="final">Social Login Cache für Frontend löschen</target>
       </trans-unit>
-      <trans-unit id="clear_cache_success">
+      <trans-unit id="clear_cache_success" approved="yes">
         <source>Caches Cleared</source>
-        <target state="translated">Caches gelöscht</target>
+        <target state="final">Caches gelöscht</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.scope">
+      <trans-unit id="nssociallogin.scope" approved="yes">
         <source>Scope of Get Attributes</source>
-        <target state="translated">Umfang der Attribute abrufen</target>
+        <target state="final">Umfang der Attribute abrufen</target>
       </trans-unit>
       <trans-unit id="nssociallogin.facebook">
         <source>Facebook</source>
         <target state="needs-translation">Facebook</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.enable_facebook">
+      <trans-unit id="nssociallogin.enable_facebook" approved="yes">
         <source>Enable Facebook</source>
-        <target state="translated">Facebook aktivieren</target>
+        <target state="final">Facebook aktivieren</target>
       </trans-unit>
-      <trans-unit id="save">
+      <trans-unit id="save" approved="yes">
         <source>Save</source>
-        <target state="translated">Speichern</target>
+        <target state="final">Speichern</target>
       </trans-unit>
       <trans-unit id="nssociallogin.x">
         <source>X</source>
         <target state="needs-translation">X</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.storage">
+      <trans-unit id="nssociallogin.storage" approved="yes">
         <source>Storage Settings</source>
-        <target state="translated">Speichereinstellungen</target>
+        <target state="final">Speichereinstellungen</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.storagePid">
+      <trans-unit id="nssociallogin.storagePid" approved="yes">
         <source>Storage Page</source>
-        <target state="translated">Speicherseite</target>
+        <target state="final">Speicherseite</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.defaultUserGroup">
+      <trans-unit id="nssociallogin.defaultUserGroup" approved="yes">
         <source>Default User Group</source>
-        <target state="translated">Standardbenutzergruppe</target>
+        <target state="final">Standardbenutzergruppe</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.fileStorage">
+      <trans-unit id="nssociallogin.fileStorage" approved="yes">
         <source>File Storage</source>
-        <target state="translated">Dateispeicher</target>
+        <target state="final">Dateispeicher</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.avtarPath">
+      <trans-unit id="nssociallogin.avtarPath" approved="yes">
         <source>Avtar Image Path</source>
-        <target state="translated">Avtar Bildpfad</target>
+        <target state="final">Avtar Bildpfad</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.displayMode">
+      <trans-unit id="nssociallogin.displayMode" approved="yes">
         <source>Display Mode</source>
-        <target state="translated">Anzeigemodus</target>
+        <target state="final">Anzeigemodus</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.styleSettings">
+      <trans-unit id="nssociallogin.styleSettings" approved="yes">
         <source>Style Settings</source>
-        <target state="translated">Stileinstellungen</target>
+        <target state="final">Stileinstellungen</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.selectStyle">
+      <trans-unit id="nssociallogin.selectStyle" approved="yes">
         <source>Select Style</source>
-        <target state="translated">Stil auswählen</target>
+        <target state="final">Stil auswählen</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.style1">
+      <trans-unit id="nssociallogin.style1" approved="yes">
         <source>Default</source>
-        <target state="translated">Standard</target>
+        <target state="final">Standard</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.style2">
+      <trans-unit id="nssociallogin.style2" approved="yes">
         <source>Icon With Hover</source>
-        <target state="translated">Symbol mit Hover</target>
+        <target state="final">Symbol mit Hover</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.style3">
+      <trans-unit id="nssociallogin.style3" approved="yes">
         <source>Icon With Hover Animation</source>
-        <target state="translated">Symbol mit Hover-Animation</target>
+        <target state="final">Symbol mit Hover-Animation</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.sociallabel">
+      <trans-unit id="nssociallogin.sociallabel" approved="yes">
         <source>Label</source>
-        <target state="translated">Etikett</target>
+        <target state="final">Etikett</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.socialiconpath">
+      <trans-unit id="nssociallogin.socialiconpath" approved="yes">
         <source>Icon Path</source>
-        <target state="translated">Symbolpfad</target>
+        <target state="final">Symbolpfad</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.displaymode.page">
+      <trans-unit id="nssociallogin.displaymode.page" approved="yes">
         <source>Page</source>
-        <target state="translated">Seite</target>
+        <target state="final">Seite</target>
       </trans-unit>
       <trans-unit id="nssociallogin.displaymode.popup">
         <source>Popup</source>
         <target state="needs-translation">Popup</target>
       </trans-unit>
-      <trans-unit id="ns_social_storage">
+      <trans-unit id="ns_social_storage" approved="yes">
         <source>Storage Settings</source>
-        <target state="translated">Speichereinstellungen</target>
+        <target state="final">Speichereinstellungen</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.appid">
+      <trans-unit id="nssociallogin.appid" approved="yes">
         <source>App Id</source>
-        <target state="translated">App-ID</target>
+        <target state="final">App-ID</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.appSecret">
+      <trans-unit id="nssociallogin.appSecret" approved="yes">
         <source>App Secret</source>
-        <target state="translated">App-Geheimnis</target>
+        <target state="final">App-Geheimnis</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.clientId">
+      <trans-unit id="nssociallogin.clientId" approved="yes">
         <source>Client Id</source>
-        <target state="translated">Client-ID</target>
+        <target state="final">Client-ID</target>
       </trans-unit>
-      <trans-unit id="nssociallogin.clientSecret">
+      <trans-unit id="nssociallogin.clientSecret" approved="yes">
         <source>Client Secret</source>
-        <target state="translated">Kundengeheimnis</target>
+        <target state="final">Kundengeheimnis</target>
       </trans-unit>
-      <trans-unit id="nssociallogin_pi1.title">
+      <trans-unit id="nssociallogin_pi1.title" approved="yes">
         <source>Social Login</source>
-        <target state="translated">Soziales Login</target>
+        <target state="final">Soziales Login</target>
       </trans-unit>
-      <trans-unit id="nssociallogin_pi1.description">
+      <trans-unit id="nssociallogin_pi1.description" approved="yes">
         <source>Allow frontend user to login with their social media account like Facebook, Google, etc.</source>
-        <target state="translated">Erlauben Sie dem Frontend-Benutzer, sich mit seinem Social-Media-Konto wie Facebook, Google usw. anzumelden.</target>
+        <target state="final">Erlauben Sie dem Frontend-Benutzer, sich mit seinem Social-Media-Konto wie Facebook, Google usw. anzumelden.</target>
       </trans-unit>
-      <trans-unit id="fe_users.tx_ns_social_login_source">
+      <trans-unit id="fe_users.tx_ns_social_login_source" approved="yes">
         <source>Provider</source>
-        <target state="translated">Anbieter</target>
+        <target state="final">Anbieter</target>
       </trans-unit>
-      <trans-unit id="fe_users.tx_ns_social_login_identifier">
+      <trans-unit id="fe_users.tx_ns_social_login_identifier" approved="yes">
         <source>Identifier</source>
-        <target state="translated">Identifikator</target>
+        <target state="final">Identifikator</target>
       </trans-unit>
-      <trans-unit id="fe_users.tab.social">
+      <trans-unit id="fe_users.tab.social" approved="yes">
         <source>Social auth</source>
-        <target state="translated">Soziale Authentifizierung</target>
+        <target state="final">Soziale Authentifizierung</target>
       </trans-unit>
-      <trans-unit id="sheetTitle">
+      <trans-unit id="sheetTitle" approved="yes">
         <source>Settings</source>
-        <target state="translated">Einstellungen</target>
+        <target state="final">Einstellungen</target>
       </trans-unit>
-      <trans-unit id="style">
+      <trans-unit id="style" approved="yes">
         <source>Style</source>
-        <target state="translated">Stil</target>
+        <target state="final">Stil</target>
       </trans-unit>
-      <trans-unit id="style.1">
+      <trans-unit id="style.1" approved="yes">
         <source>Default</source>
-        <target state="translated">Standard</target>
+        <target state="final">Standard</target>
       </trans-unit>
-      <trans-unit id="style.2">
+      <trans-unit id="style.2" approved="yes">
         <source>Icon With Hover</source>
-        <target state="translated">Symbol mit Hover</target>
+        <target state="final">Symbol mit Hover</target>
       </trans-unit>
-      <trans-unit id="style.3">
+      <trans-unit id="style.3" approved="yes">
         <source>Icon With Hover Animation</source>
-        <target state="translated">Symbol mit Hover-Animation</target>
+        <target state="final">Symbol mit Hover-Animation</target>
       </trans-unit>
-      <trans-unit id="useGlobalSettings">
+      <trans-unit id="useGlobalSettings" approved="yes">
         <source>Use Global Configurations</source>
-        <target state="translated">Globale Konfigurationen verwenden</target>
+        <target state="final">Globale Konfigurationen verwenden</target>
       </trans-unit>
       <trans-unit id="noprovider">
         <source>Please Enable Providers From The Site Configuration.</source>
         <target state="needs-translation">Please Enable Providers From The Site Configuration.</target>
       </trans-unit>
-      <trans-unit id="userDisabled">
+      <trans-unit id="userDisabled" approved="yes">
         <source>User is disabled from BE. Please enable to process further.</source>
-        <target state="translated">Der Benutzer ist für BE deaktiviert. Bitte aktivieren Sie ihn für die weitere Bearbeitung.</target>
+        <target state="final">Der Benutzer ist für BE deaktiviert. Bitte aktivieren Sie ihn für die weitere Bearbeitung.</target>
       </trans-unit>
     </body>
   </file>
