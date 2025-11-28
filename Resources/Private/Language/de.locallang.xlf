@@ -32,7 +32,7 @@
       </trans-unit>
       <trans-unit id="nssociallogin.facebook">
         <source>Facebook</source>
-        <target state="needs-translation">Facebook</target>
+        <target state="translated">Facebook</target>
       </trans-unit>
       <trans-unit id="nssociallogin.enable_facebook" approved="yes">
         <source>Enable Facebook</source>
@@ -44,7 +44,7 @@
       </trans-unit>
       <trans-unit id="nssociallogin.x">
         <source>X</source>
-        <target state="needs-translation">X</target>
+        <target state="translated">X</target>
       </trans-unit>
       <trans-unit id="nssociallogin.storage" approved="yes">
         <source>Storage Settings</source>
@@ -104,7 +104,7 @@
       </trans-unit>
       <trans-unit id="nssociallogin.displaymode.popup">
         <source>Popup</source>
-        <target state="needs-translation">Popup</target>
+        <target state="translated">Popup</target>
       </trans-unit>
       <trans-unit id="ns_social_storage" approved="yes">
         <source>Storage Settings</source>
@@ -172,7 +172,7 @@
       </trans-unit>
       <trans-unit id="noprovider">
         <source>Please Enable Providers From The Site Configuration.</source>
-        <target state="needs-translation">Please Enable Providers From The Site Configuration.</target>
+        <target state="translated">Bitte aktivieren Sie die Anbieter in der Website-Konfiguration.</target>
       </trans-unit>
       <trans-unit id="userDisabled" approved="yes">
         <source>User is disabled from BE. Please enable to process further.</source>
