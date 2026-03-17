@@ -1,4 +1,5 @@
 <?php
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
 defined('TYPO3') or defined('TYPO3_MODE') || die();
     
@@ -40,6 +41,7 @@ if (version_compare($typo3VersionArray['version_main'], '11', '>=')) {
     \NITSAN\NsSocialLogin\Hooks\ClearCacheHook::class;
 
 }
+if (version_compare($typo3VersionArray['version_main'], '11', '>=')) {
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     $name,
     'Pi1',
@@ -63,7 +65,35 @@ if (version_compare($typo3VersionArray['version_main'], '11', '>=')) {
         $authController => 'endpoint, list',
     ]
 );
-    
+}
+else
+     {
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    $name,
+    'Pi1',
+    [
+        $authController => 'list, connect',
+    ],
+    // non-cacheable actions
+    [
+        $authController => 'list, connect',
+    ],
+    ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
+);
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    $name,
+    'Pi2',
+    [
+        $authController => 'endpoint, list',
+    ],
+    // non-cacheable actions
+    [
+        $authController => 'endpoint, list',
+    ],
+    ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
+);
+     }
 
 //add marker to felogin if is loaded
 if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('felogin')) {

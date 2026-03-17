@@ -185,7 +185,7 @@ class SocialLoginService extends AbstractAuthenticationService
 
                         //this default UID is the “file-admin/“ storage, auto-created by default
                         $storagePid = $fileStoragePid ? (int)$fileStoragePid : 1;
-
+                        
                         $storagePath = $filePath ?? 'user_upload';
                         /* @var $storage ResourceStorage */
                         $storageRepository = GeneralUtility::makeInstance(StorageRepository::class);

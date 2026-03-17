@@ -1,3 +1,4 @@
+@import 'EXT:ns_social_login/Configuration/TypoScript/setup.typoscript'
 plugin {
     tx_nssociallogin {
         view {
