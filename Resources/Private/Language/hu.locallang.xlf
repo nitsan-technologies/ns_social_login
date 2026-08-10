@@ -4,179 +4,179 @@
     <body>
       <trans-unit id="logout.label">
         <source>Logout</source>
-        <target state="needs-translation">Logout</target>
+        <target state="translated">Kijelentkezés</target>
       </trans-unit>
       <trans-unit id="label">
         <source>Label</source>
-        <target state="needs-translation">Label</target>
+        <target state="translated">Címke</target>
       </trans-unit>
       <trans-unit id="facebook.label">
         <source>Sign in with Facebook</source>
-        <target state="needs-translation">Sign in with Facebook</target>
+        <target state="translated">Bejelentkezés Facebookkal</target>
       </trans-unit>
       <trans-unit id="clear_cache">
         <source>Clear Social Login Cache</source>
-        <target state="needs-translation">Clear Social Login Cache</target>
+        <target state="translated">Közösségi bejelentkezés gyorsítótárának ürítése</target>
       </trans-unit>
       <trans-unit id="clear_cache.description">
         <source>Clear Social Login cache for Frontend</source>
-        <target state="needs-translation">Clear Social Login cache for Frontend</target>
+        <target state="translated">Közösségi bejelentkezés gyorsítótárának ürítése a frontendhez</target>
       </trans-unit>
       <trans-unit id="clear_cache_success">
         <source>Caches Cleared</source>
-        <target state="needs-translation">Caches Cleared</target>
+        <target state="translated">Gyorsítótárak ürítve</target>
       </trans-unit>
       <trans-unit id="nssociallogin.scope">
         <source>Scope of Get Attributes</source>
-        <target state="needs-translation">Scope of Get Attributes</target>
+        <target state="translated">Attribútumlekérés hatóköre</target>
       </trans-unit>
       <trans-unit id="nssociallogin.facebook">
         <source>Facebook</source>
-        <target state="needs-translation">Facebook</target>
+        <target state="translated">Facebook</target>
       </trans-unit>
       <trans-unit id="nssociallogin.enable_facebook">
         <source>Enable Facebook</source>
-        <target state="needs-translation">Enable Facebook</target>
+        <target state="translated">Facebook engedélyezése</target>
       </trans-unit>
       <trans-unit id="save">
         <source>Save</source>
-        <target state="needs-translation">Save</target>
+        <target state="translated">Mentés</target>
       </trans-unit>
       <trans-unit id="nssociallogin.x">
         <source>X</source>
-        <target state="needs-translation">X</target>
+        <target state="translated">X</target>
       </trans-unit>
       <trans-unit id="nssociallogin.storage">
         <source>Storage Settings</source>
-        <target state="needs-translation">Storage Settings</target>
+        <target state="translated">Tárolási beállítások</target>
       </trans-unit>
       <trans-unit id="nssociallogin.storagePid">
         <source>Storage Page</source>
-        <target state="needs-translation">Storage Page</target>
+        <target state="translated">Tárolási oldal</target>
       </trans-unit>
       <trans-unit id="nssociallogin.defaultUserGroup">
         <source>Default User Group</source>
-        <target state="needs-translation">Default User Group</target>
+        <target state="translated">Alapértelmezett felhasználói csoport</target>
       </trans-unit>
       <trans-unit id="nssociallogin.fileStorage">
         <source>File Storage</source>
-        <target state="needs-translation">File Storage</target>
+        <target state="translated">Fájltárolás</target>
       </trans-unit>
       <trans-unit id="nssociallogin.avtarPath">
         <source>Avtar Image Path</source>
-        <target state="needs-translation">Avtar Image Path</target>
+        <target state="translated">Avatarkép útvonala</target>
       </trans-unit>
       <trans-unit id="nssociallogin.displayMode">
         <source>Display Mode</source>
-        <target state="needs-translation">Display Mode</target>
+        <target state="translated">Megjelenítési mód</target>
       </trans-unit>
       <trans-unit id="nssociallogin.styleSettings">
         <source>Style Settings</source>
-        <target state="needs-translation">Style Settings</target>
+        <target state="translated">Stílusbeállítások</target>
       </trans-unit>
       <trans-unit id="nssociallogin.selectStyle">
         <source>Select Style</source>
-        <target state="needs-translation">Select Style</target>
+        <target state="translated">Stílus kiválasztása</target>
       </trans-unit>
       <trans-unit id="nssociallogin.style1">
         <source>Default</source>
-        <target state="needs-translation">Default</target>
+        <target state="translated">Alapértelmezett</target>
       </trans-unit>
       <trans-unit id="nssociallogin.style2">
         <source>Icon With Hover</source>
-        <target state="needs-translation">Icon With Hover</target>
+        <target state="translated">Ikon hoverrel</target>
       </trans-unit>
       <trans-unit id="nssociallogin.style3">
         <source>Icon With Hover Animation</source>
-        <target state="needs-translation">Icon With Hover Animation</target>
+        <target state="translated">Ikon hover animációval</target>
       </trans-unit>
       <trans-unit id="nssociallogin.sociallabel">
         <source>Label</source>
-        <target state="needs-translation">Label</target>
+        <target state="translated">Címke</target>
       </trans-unit>
       <trans-unit id="nssociallogin.socialiconpath">
         <source>Icon Path</source>
-        <target state="needs-translation">Icon Path</target>
+        <target state="translated">Ikon útvonala</target>
       </trans-unit>
       <trans-unit id="nssociallogin.displaymode.page">
         <source>Page</source>
-        <target state="needs-translation">Page</target>
+        <target state="translated">Oldal</target>
       </trans-unit>
       <trans-unit id="nssociallogin.displaymode.popup">
         <source>Popup</source>
-        <target state="needs-translation">Popup</target>
+        <target state="translated">Felugró ablak</target>
       </trans-unit>
       <trans-unit id="ns_social_storage">
         <source>Storage Settings</source>
-        <target state="needs-translation">Storage Settings</target>
+        <target state="translated">Tárolási beállítások</target>
       </trans-unit>
       <trans-unit id="nssociallogin.appid">
         <source>App Id</source>
-        <target state="needs-translation">App Id</target>
+        <target state="translated">App azonosító</target>
       </trans-unit>
       <trans-unit id="nssociallogin.appSecret">
         <source>App Secret</source>
-        <target state="needs-translation">App Secret</target>
+        <target state="translated">App titkos kulcs</target>
       </trans-unit>
       <trans-unit id="nssociallogin.clientId">
         <source>Client Id</source>
-        <target state="needs-translation">Client Id</target>
+        <target state="translated">Ügyfél-azonosító</target>
       </trans-unit>
       <trans-unit id="nssociallogin.clientSecret">
         <source>Client Secret</source>
-        <target state="needs-translation">Client Secret</target>
+        <target state="translated">Ügyfél titkos kulcs</target>
       </trans-unit>
       <trans-unit id="nssociallogin_pi1.title">
         <source>Social Login</source>
-        <target state="needs-translation">Social Login</target>
+        <target state="translated">Közösségi bejelentkezés</target>
       </trans-unit>
       <trans-unit id="nssociallogin_pi1.description">
         <source>Allow frontend user to login with their social media account like Facebook, Google, etc.</source>
-        <target state="needs-translation">Allow frontend user to login with their social media account like Facebook, Google, etc.</target>
+        <target state="translated">Lehetővé teszi a frontend felhasználók számára, hogy közösségimédia-fiókjukkal (például Facebook, Google) jelentkezzenek be.</target>
       </trans-unit>
       <trans-unit id="fe_users.tx_ns_social_login_source">
         <source>Provider</source>
-        <target state="needs-translation">Provider</target>
+        <target state="translated">Szolgáltató</target>
       </trans-unit>
       <trans-unit id="fe_users.tx_ns_social_login_identifier">
         <source>Identifier</source>
-        <target state="needs-translation">Identifier</target>
+        <target state="translated">Azonosító</target>
       </trans-unit>
       <trans-unit id="fe_users.tab.social">
         <source>Social auth</source>
-        <target state="needs-translation">Social auth</target>
+        <target state="translated">Közösségi hitelesítés</target>
       </trans-unit>
       <trans-unit id="sheetTitle">
         <source>Settings</source>
-        <target state="needs-translation">Settings</target>
+        <target state="translated">Beállítások</target>
       </trans-unit>
       <trans-unit id="style">
         <source>Style</source>
-        <target state="needs-translation">Style</target>
+        <target state="translated">Stílus</target>
       </trans-unit>
       <trans-unit id="style.1">
         <source>Default</source>
-        <target state="needs-translation">Default</target>
+        <target state="translated">Alapértelmezett</target>
       </trans-unit>
       <trans-unit id="style.2">
         <source>Icon With Hover</source>
-        <target state="needs-translation">Icon With Hover</target>
+        <target state="translated">Ikon hoverrel</target>
       </trans-unit>
       <trans-unit id="style.3">
         <source>Icon With Hover Animation</source>
-        <target state="needs-translation">Icon With Hover Animation</target>
+        <target state="translated">Ikon hover animációval</target>
       </trans-unit>
       <trans-unit id="useGlobalSettings">
         <source>Use Global Configurations</source>
-        <target state="needs-translation">Use Global Configurations</target>
+        <target state="translated">Globális konfigurációk használata</target>
       </trans-unit>
       <trans-unit id="noprovider">
         <source>Please Enable Providers From The Site Configuration.</source>
-        <target state="needs-translation">Please Enable Providers From The Site Configuration.</target>
+        <target state="translated">Kérjük, engedélyezze a szolgáltatókat az oldalkonfigurációban.</target>
       </trans-unit>
       <trans-unit id="userDisabled">
         <source>User is disabled from BE. Please enable to process further.</source>
-        <target state="needs-translation">User is disabled from BE. Please enable to process further.</target>
+        <target state="translated">A felhasználó le van tiltva a backendben. A további feldolgozáshoz kérjük, engedélyezze.</target>
       </trans-unit>
     </body>
   </file>
