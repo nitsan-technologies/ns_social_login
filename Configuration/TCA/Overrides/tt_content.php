@@ -25,3 +25,8 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['nssocial
     'nssociallogin_pi1',
     'FILE:EXT:ns_social_login/Configuration/FlexForms/flexform_list.xml'
 );
+
+if (!is_string($GLOBALS['TCA']['tt_content']['types']['list']['previewRenderer'] ?? null)) {
+    $GLOBALS['TCA']['tt_content']['types']['list']['previewRenderer']['nssociallogin_pi1'] =
+        \NITSAN\NsSocialLogin\Preview\SocialLoginPreviewRenderer::class;
+}
