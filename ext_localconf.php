@@ -77,3 +77,10 @@ $GLOBALS['TYPO3_CONF_VARS']['FE']['cacheHash']['excludedParameters'][] = 'tx_nss
 
 //globals namespace for viewhelper
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['sociallogin'] = ['NITSAN\\NsSocialLogin\\ViewHelpers'];
+
+// Priority must be unique per nodeName across all installed extensions
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeResolver'][1791979347] = [
+    'nodeName' => 'flexFormNoTabsContainer',
+    'priority' => 44,
+    'class' => \NITSAN\NsSocialLogin\Form\Resolver\PremiumStripFlexFormNoTabsContainerResolver::class,
+];

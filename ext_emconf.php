@@ -12,10 +12,11 @@ $EM_CONF['ns_social_login'] = [
     'uploadfolder' => 0,
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '2.0.0',
+    'version' => '2.1.0',
     'constraints' => [
         'depends' => [
             'typo3' => '9.5.0-13.4.99',
+            'ns_license' => '14.5.4-14.9.99',
         ],
         'conflicts' => [
         ],
