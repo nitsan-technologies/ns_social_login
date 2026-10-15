@@ -174,6 +174,18 @@
         <source>Please Enable Providers From The Site Configuration.</source>
         <target state="translated">Kérjük, engedélyezze a szolgáltatókat az oldalkonfigurációban.</target>
       </trans-unit>
+      <trans-unit id="premium.strip.headline" resname="premium.strip.headline">
+        <source>You're using the free version of NS Social Login</source>
+        <target state="needs-translation">You're using the free version of NS Social Login</target>
+      </trans-unit>
+      <trans-unit id="premium.strip.description" resname="premium.strip.description">
+        <source>Unlock premium features and get more out of NS Social Login.</source>
+        <target state="needs-translation">Unlock premium features and get more out of NS Social Login.</target>
+      </trans-unit>
+      <trans-unit id="premium.strip.trial" resname="premium.strip.trial">
+        <source>Start Free Trial</source>
+        <target state="needs-translation">Start Free Trial</target>
+      </trans-unit>
       <trans-unit id="userDisabled">
         <source>User is disabled from BE. Please enable to process further.</source>
         <target state="translated">A felhasználó le van tiltva a backendben. A további feldolgozáshoz kérjük, engedélyezze.</target>
