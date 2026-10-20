@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="EXT:ns_social_login/Resources/Private/Language/locallang.xlf" date=" 2015-11-18T13:15:38Z" product-name="ns_social_login" target-language="t3">
+    <body>
+      <trans-unit id="logout.label">
+        <source>Logout</source>
+        <target>crwdns376582:0crwdne376582:0</target>
+      </trans-unit>
+      <trans-unit id="label">
+        <source>Label</source>
+        <target>crwdns376584:0crwdne376584:0</target>
+      </trans-unit>
+      <trans-unit id="facebook.label">
+        <source>Sign in with Facebook</source>
+        <target>crwdns376586:0crwdne376586:0</target>
+      </trans-unit>
+      <trans-unit id="clear_cache">
+        <source>Clear Social Login Cache</source>
+        <target>crwdns376588:0crwdne376588:0</target>
+      </trans-unit>
+      <trans-unit id="clear_cache.description">
+        <source>Clear Social Login cache for Frontend</source>
+        <target>crwdns376590:0crwdne376590:0</target>
+      </trans-unit>
+      <trans-unit id="clear_cache_success">
+        <source>Caches Cleared</source>
+        <target>crwdns376592:0crwdne376592:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.scope">
+        <source>Scope of Get Attributes</source>
+        <target>crwdns376594:0crwdne376594:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.facebook">
+        <source>Facebook</source>
+        <target>crwdns376596:0crwdne376596:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.enable_facebook">
+        <source>Enable Facebook</source>
+        <target>crwdns376598:0crwdne376598:0</target>
+      </trans-unit>
+      <trans-unit id="save">
+        <source>Save</source>
+        <target>crwdns376600:0crwdne376600:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.x">
+        <source>X</source>
+        <target>crwdns376602:0crwdne376602:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.storage">
+        <source>Storage Settings</source>
+        <target>crwdns376604:0crwdne376604:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.storagePid">
+        <source>Storage Page</source>
+        <target>crwdns376606:0crwdne376606:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.defaultUserGroup">
+        <source>Default User Group</source>
+        <target>crwdns376608:0crwdne376608:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.fileStorage">
+        <source>File Storage</source>
+        <target>crwdns376610:0crwdne376610:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.avtarPath">
+        <source>Avtar Image Path</source>
+        <target>crwdns376612:0crwdne376612:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.displayMode">
+        <source>Display Mode</source>
+        <target>crwdns376614:0crwdne376614:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.styleSettings">
+        <source>Style Settings</source>
+        <target>crwdns376616:0crwdne376616:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.selectStyle">
+        <source>Select Style</source>
+        <target>crwdns376618:0crwdne376618:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.style1">
+        <source>Default</source>
+        <target>crwdns376620:0crwdne376620:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.style2">
+        <source>Icon With Hover</source>
+        <target>crwdns376622:0crwdne376622:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.style3">
+        <source>Icon With Hover Animation</source>
+        <target>crwdns376624:0crwdne376624:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.sociallabel">
+        <source>Label</source>
+        <target>crwdns376626:0crwdne376626:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.socialiconpath">
+        <source>Icon Path</source>
+        <target>crwdns376628:0crwdne376628:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.displaymode.page">
+        <source>Page</source>
+        <target>crwdns376630:0crwdne376630:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.displaymode.popup">
+        <source>Popup</source>
+        <target>crwdns376632:0crwdne376632:0</target>
+      </trans-unit>
+      <trans-unit id="ns_social_storage">
+        <source>Storage Settings</source>
+        <target>crwdns376634:0crwdne376634:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.appid">
+        <source>App Id</source>
+        <target>crwdns376636:0crwdne376636:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.appSecret">
+        <source>App Secret</source>
+        <target>crwdns376638:0crwdne376638:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.clientId">
+        <source>Client Id</source>
+        <target>crwdns376640:0crwdne376640:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin.clientSecret">
+        <source>Client Secret</source>
+        <target>crwdns376642:0crwdne376642:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin_pi1.title">
+        <source>Social Login</source>
+        <target>crwdns376644:0crwdne376644:0</target>
+      </trans-unit>
+      <trans-unit id="nssociallogin_pi1.description">
+        <source>Allow frontend user to login with their social media account like Facebook, Google, etc.</source>
+        <target>crwdns376646:0crwdne376646:0</target>
+      </trans-unit>
+      <trans-unit id="fe_users.tx_ns_social_login_source">
+        <source>Provider</source>
+        <target>crwdns376648:0crwdne376648:0</target>
+      </trans-unit>
+      <trans-unit id="fe_users.tx_ns_social_login_identifier">
+        <source>Identifier</source>
+        <target>crwdns376650:0crwdne376650:0</target>
+      </trans-unit>
+      <trans-unit id="fe_users.tab.social">
+        <source>Social auth</source>
+        <target>crwdns376652:0crwdne376652:0</target>
+      </trans-unit>
+      <trans-unit id="sheetTitle">
+        <source>Settings</source>
+        <target>crwdns376654:0crwdne376654:0</target>
+      </trans-unit>
+      <trans-unit id="style">
+        <source>Style</source>
+        <target>crwdns376656:0crwdne376656:0</target>
+      </trans-unit>
+      <trans-unit id="style.1">
+        <source>Default</source>
+        <target>crwdns376658:0crwdne376658:0</target>
+      </trans-unit>
+      <trans-unit id="style.2">
+        <source>Icon With Hover</source>
+        <target>crwdns376660:0crwdne376660:0</target>
+      </trans-unit>
+      <trans-unit id="style.3">
+        <source>Icon With Hover Animation</source>
+        <target>crwdns376662:0crwdne376662:0</target>
+      </trans-unit>
+      <trans-unit id="useGlobalSettings">
+        <source>Use Global Configurations</source>
+        <target>crwdns376664:0crwdne376664:0</target>
+      </trans-unit>
+      <trans-unit id="noprovider">
+        <source>Please Enable Providers From The Site Configuration.</source>
+        <target>crwdns376666:0crwdne376666:0</target>
+      </trans-unit>
+      <trans-unit id="premium.strip.headline" resname="premium.strip.headline">
+        <source>You're using the free version of NS Social Login</source>
+        <target>crwdns415239:0crwdne415239:0</target>
+      </trans-unit>
+      <trans-unit id="premium.strip.description" resname="premium.strip.description">
+        <source>Unlock premium features and get more out of NS Social Login.</source>
+        <target>crwdns415241:0crwdne415241:0</target>
+      </trans-unit>
+      <trans-unit id="premium.strip.trial" resname="premium.strip.trial">
+        <source>Start Free Trial</source>
+        <target>crwdns415243:0crwdne415243:0</target>
+      </trans-unit>
+      <trans-unit id="userDisabled">
+        <source>User is disabled from BE. Please enable to process further.</source>
+        <target>crwdns376668:0crwdne376668:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
